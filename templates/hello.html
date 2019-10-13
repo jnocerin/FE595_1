@@ -1,9 +1,9 @@
 <html>
 
 <body>
-   /** <h2> Hello {{ html_name }} </h2> **/
-   <h2> Hello { % condition %} 
-         { if html_name %}
+   <!-- <h2> Hello {{ html_name }} </h2> **/ -->
+   <h2> Hello {% condition %} 
+         {% if html_name %}
             {{ html_name }}
          {% else %}
             World!
