@@ -9,7 +9,9 @@ def hello_world():
     
 @app.route('/hello/<name>', methods=['GET'])
 def hello_person(name):
-     return render_template("hello.html", name=name)
+    return render_template("hello.html", htmlname=name)
+    return render_template("hello.html", name=name)
+    
 #    return "Hello,  {}!".format(name)
   
 if __name__ == "__main__":
