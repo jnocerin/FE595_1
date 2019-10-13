@@ -3,7 +3,9 @@
 <body>
    <!-- <h2> Hello {{ html_name }} </h2> **/ -->
    <h2> Hello 
-         {% if html_name %}
+         {% if html_name == "FALSE" %}
+            Anonymous User!
+         {% elif html_name %}
             {{ html_name }}
          {% else %}
             World!
